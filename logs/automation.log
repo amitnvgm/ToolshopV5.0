@@ -2589,3 +2589,6 @@
 2025-03-25 07:10:45.197 [main] INFO  TestCases.TC008_InvalidLoginErrorMessageTest - **** Invalid Login Test to check error message Ended
 2025-03-25 07:10:45.200 [main] INFO  TestCases.TC008_InvalidLoginErrorMessageTest - **** Invalid Login Test to check error message  Started
 2025-03-25 07:10:45.534 [main] INFO  TestCases.TC008_InvalidLoginErrorMessageTest - **** Invalid Login Test to check error message Ended
+2025-03-25 19:38:35.054 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\java\selenium\webdriver\ToolshopV5.0\TC006.xml
+

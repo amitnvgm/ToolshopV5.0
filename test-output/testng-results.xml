@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T07:10:24 IST" name="Authentication Tests Suite" finished-at="2025-03-25T07:10:45 IST" duration-ms="20765">
+  <suite started-at="2025-03-25T19:38:35 IST" name="Shopping Cart Functionality Suite" finished-at="2025-03-25T19:38:42 IST" duration-ms="7231">
     <groups>
     </groups>
-    <test started-at="2025-03-25T07:10:24 IST" name="Authentication Tests" finished-at="2025-03-25T07:10:45 IST" duration-ms="20765">
-      <class name="TestCases.TC001_ValidLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC001_ValidLoginTest@373ebf74]" started-at="2025-03-25T07:10:25 IST" name="setup" finished-at="2025-03-25T07:10:28 IST" duration-ms="3578" status="PASS">
+    <test started-at="2025-03-25T19:38:35 IST" name="Test" finished-at="2025-03-25T19:38:42 IST" duration-ms="7231">
+      <class name="TestCases.TC006_RemoveProductfromtheCartTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC006_RemoveProductfromtheCartTest@52066604]" started-at="2025-03-25T19:38:35 IST" name="setup" finished-at="2025-03-25T19:38:40 IST" duration-ms="5380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,159 +23,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initializeLogger()[pri:0, instance:TestCases.TC001_ValidLoginTest@373ebf74]" started-at="2025-03-25T07:10:28 IST" name="initializeLogger" finished-at="2025-03-25T07:10:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializeLogger()[pri:0, instance:TestCases.TC006_RemoveProductfromtheCartTest@52066604]" started-at="2025-03-25T19:38:40 IST" name="initializeLogger" finished-at="2025-03-25T19:38:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeLogger -->
-        <test-method signature="validLogin()[pri:0, instance:TestCases.TC001_ValidLoginTest@373ebf74]" started-at="2025-03-25T07:10:28 IST" name="validLogin" finished-at="2025-03-25T07:10:41 IST" duration-ms="12338" status="PASS">
+        <test-method signature="removeProductfromCart()[pri:0, instance:TestCases.TC006_RemoveProductfromtheCartTest@52066604]" started-at="2025-03-25T19:38:40 IST" name="removeProductfromCart" finished-at="2025-03-25T19:38:41 IST" duration-ms="1072" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[product not removed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: product not removed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at TestCases.TC006_RemoveProductfromtheCartTest.removeProductfromCart(TC006_RemoveProductfromtheCartTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.TC001_ValidLoginTest@373ebf74]" started-at="2025-03-25T07:10:45 IST" name="tearDown" finished-at="2025-03-25T07:10:45 IST" duration-ms="185" status="PASS">
+        </test-method> <!-- removeProductfromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.TC006_RemoveProductfromtheCartTest@52066604]" started-at="2025-03-25T19:38:42 IST" name="tearDown" finished-at="2025-03-25T19:38:42 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.TC001_ValidLoginTest -->
-      <class name="TestCases.TC002_InvalidLoginTest">
-        <test-method is-config="true" signature="initializeLogger()[pri:0, instance:TestCases.TC002_InvalidLoginTest@112f364d]" started-at="2025-03-25T07:10:41 IST" name="initializeLogger" finished-at="2025-03-25T07:10:41 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeLogger -->
-        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC002_InvalidLoginTest@112f364d]" started-at="2025-03-25T07:10:42 IST" name="InvalidLogin" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:42 IST" duration-ms="367" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@gmail]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc45]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidLogin -->
-        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC002_InvalidLoginTest@112f364d]" started-at="2025-03-25T07:10:42 IST" name="InvalidLogin" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:43 IST" duration-ms="363" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ert]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234df]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidLogin -->
-        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC002_InvalidLoginTest@112f364d]" started-at="2025-03-25T07:10:43 IST" name="InvalidLogin" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:43 IST" duration-ms="370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gsd]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4545]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidLogin -->
-        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC002_InvalidLoginTest@112f364d]" started-at="2025-03-25T07:10:43 IST" name="InvalidLogin" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:43 IST" duration-ms="384" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gdsg]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidLogin -->
-      </class> <!-- TestCases.TC002_InvalidLoginTest -->
-      <class name="TestCases.TC008_InvalidLoginErrorMessageTest">
-        <test-method is-config="true" signature="initializeLogger()[pri:0, instance:TestCases.TC008_InvalidLoginErrorMessageTest@5ccbeb64]" started-at="2025-03-25T07:10:43 IST" name="initializeLogger" finished-at="2025-03-25T07:10:43 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeLogger -->
-        <test-method signature="IsInvalidLoginEroroMessageDisplayed(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC008_InvalidLoginErrorMessageTest@5ccbeb64]" started-at="2025-03-25T07:10:44 IST" name="IsInvalidLoginEroroMessageDisplayed" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:44 IST" duration-ms="420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@gmail]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc45]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IsInvalidLoginEroroMessageDisplayed -->
-        <test-method signature="IsInvalidLoginEroroMessageDisplayed(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC008_InvalidLoginErrorMessageTest@5ccbeb64]" started-at="2025-03-25T07:10:44 IST" name="IsInvalidLoginEroroMessageDisplayed" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:44 IST" duration-ms="332" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ert]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234df]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IsInvalidLoginEroroMessageDisplayed -->
-        <test-method signature="IsInvalidLoginEroroMessageDisplayed(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC008_InvalidLoginErrorMessageTest@5ccbeb64]" started-at="2025-03-25T07:10:44 IST" name="IsInvalidLoginEroroMessageDisplayed" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:45 IST" duration-ms="333" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gsd]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4545]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IsInvalidLoginEroroMessageDisplayed -->
-        <test-method signature="IsInvalidLoginEroroMessageDisplayed(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TC008_InvalidLoginErrorMessageTest@5ccbeb64]" started-at="2025-03-25T07:10:45 IST" name="IsInvalidLoginEroroMessageDisplayed" data-provider="InvalidLoginDataExcel" finished-at="2025-03-25T07:10:45 IST" duration-ms="336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gdsg]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IsInvalidLoginEroroMessageDisplayed -->
-      </class> <!-- TestCases.TC008_InvalidLoginErrorMessageTest -->
-    </test> <!-- Authentication Tests -->
-  </suite> <!-- Authentication Tests Suite -->
+      </class> <!-- TestCases.TC006_RemoveProductfromtheCartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Shopping Cart Functionality Suite -->
 </testng-results>
