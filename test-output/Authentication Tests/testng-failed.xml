@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Authentication Tests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager2"/>
+  </listeners>
+  <test thread-count="5" name="InvalidLogin(failed)">
+    <parameter name="os" value="window"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC002_InvalidLoginTest">
+        <methods>
+          <include name="initializeLogger"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="InvalidLogin"/>
+        </methods>
+      </class> <!-- TestCases.TC002_InvalidLoginTest -->
+    </classes>
+  </test> <!-- InvalidLogin(failed) -->
+</suite> <!-- Failed suite [Authentication Tests] -->

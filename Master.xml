@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ToolShopV5.0 Tests Suite" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"/>
+	</listeners>
+	
+  <test name="Authentication Test">
+  	<parameter name="os" value="window"/>
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC001_ValidLoginTest"/>
+       <class name="TestCases.TC002_InvalidLoginTest"/>
+       <class name="TestCases.TC008_InvalidLoginErrorMessageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="Product Search Functionality Test">
+  	<parameter name="os" value="window"/>
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC003_SearchForExistingProductTest"/>
+      <class name="TestCases.TC004_SearchForNonExistingProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="Shoping Cart Functionality">
+  	<parameter name="os" value="window"/>
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC005_AddProductToCartTest"/>
+      <class name="TestCases.TC006_RemoveProductfromtheCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+  	
+  
+   <test  name="Checkout process Test">
+  	<parameter name="os" value="window"/>
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC007_SuccessfulCheckoutTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
